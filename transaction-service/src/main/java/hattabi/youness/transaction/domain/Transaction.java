@@ -3,7 +3,6 @@ package hattabi.youness.transaction.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.List;
 import java.util.UUID;
 import java.math.BigDecimal;
 import java.time.Instant;
