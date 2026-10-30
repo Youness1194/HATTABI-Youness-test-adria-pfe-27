@@ -1,0 +1,19 @@
+type Account {
+  id: ID!
+  customerReference: String
+  status: String
+  currency: String
+  balance: Float!
+}
+type Query {
+  accounts: [Account!]!
+  account(id: ID!): Account
+}
+type Mutation {
+  createAccount(
+    customerReference: String!
+    currency: String!
+    initialBalance: Float!
+  ): Account!
+  setAccountStatus(id: ID!, status: String!): Account!
+}
